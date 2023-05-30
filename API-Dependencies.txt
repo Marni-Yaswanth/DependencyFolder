@@ -1,0 +1,19 @@
+For API-Gateway dependencies.
+
+- spring boot devtools 
+- spring boot actuator
+- eureka discovery client
+- gate way
+
+in api-gateway application.properties file
+- spring.cloud.gateway.discovery.locator.enabled=true //this tells the eureka to call the required service
+
+- eureka.client.serviceUrl.defaultZone=http://localhost:8761/eureka
+// this tells to register the api gate way in eureka
+
+for example if we have 1st file
+in that 
+spring.application.name=cloud1
+server.port=8001
+
+in second file also same like that

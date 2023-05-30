@@ -1,0 +1,6 @@
+For API-Gateway dependencies.
+
+- spring boot devtools 
+- spring boot actuator
+- eureka discovery client
+- gate way

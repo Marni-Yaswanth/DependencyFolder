@@ -1,0 +1,56 @@
+1) in application's application.properties
+add
+restaurantapp.ribbon.listOfServers=localhost:9090
+
+2)in model
+add 
+@Data
+import lombok.*;
+
+3)in application's applicationController
+import proxy
+@RibbonClient(name="")
+autowire service proxy
+@GetMapping for method
+@CircuitBreaker(name="breaker",fallbackMethod="fallback")
+return statement
+
+4) in application's application class
+
+import org.springframework.cloud.openfeign.*;
+import org.springframework.cloud.netflix.ribbon.*;
+import org.springframework.context.annotation.*;
+@SpringBootApplication
+@ComponentScan(basePackages="com.restaurant")
+@EnableFeignClients(basePackages="com.restaurant")
+@RibbonClients({
+    @RibbonClient(name="greet")})
+
+5) in serviceproxy
+@OpenClient(name="greet",url="http://localhost:8091")
+import org.springframework.cloud.openfeign.*;
+
+6) in restaurantservice in controller,
+autowire service class
+
+
+7)
+restaurant registry application
+
+8)registry application.prop
+
+9)router application
+
+10)router application.propeties
+
+11) restaurant service application
+
+12) restaurant controller 
+autowire service,
+return statements
+
+13)exception class
+
+14)@Service on serviceImpl
+
+15)service.application
