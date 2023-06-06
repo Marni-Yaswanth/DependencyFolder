@@ -28,3 +28,5 @@ create a maven prject using spring initialzr using above said dependencies
 create controler with rest controller
 create service with service annotation
 create repository with repository annoatation
+
+create a database at the time of when run the code
