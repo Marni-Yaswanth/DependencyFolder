@@ -30,3 +30,6 @@ create service with service annotation
 create repository with repository annoatation
 
 create a database at the time of when run the code
+while creating a database ensure u r making it as per the package name
+like if we have coom.traindetails.traindetails.model
+make the class name as TrainDetails
